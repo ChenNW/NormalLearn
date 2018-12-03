@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0qc-aG-Jds">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDS-GT-Db2">
+                                <rect key="frame" x="0.0" y="224" width="70" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="igt-mJ-roL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbZ-dT-Y5c">
+                                <rect key="frame" x="80" y="224" width="285" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HPU-Sp-ufq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GbZ-dT-Y5c" firstAttribute="top" secondItem="bDS-GT-Db2" secondAttribute="top" id="0GC-d9-efL"/>
+                            <constraint firstItem="bDS-GT-Db2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="BW6-OQ-dxP"/>
+                            <constraint firstItem="bDS-GT-Db2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PQ2-uL-QOp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GbZ-dT-Y5c" secondAttribute="trailing" constant="10" id="PVm-CR-skN"/>
+                            <constraint firstItem="GbZ-dT-Y5c" firstAttribute="leading" secondItem="bDS-GT-Db2" secondAttribute="trailing" constant="10" id="RWk-zp-fC2"/>
+                            <constraint firstItem="GbZ-dT-Y5c" firstAttribute="leading" secondItem="bDS-GT-Db2" secondAttribute="trailing" constant="10" id="W5N-54-K2y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dYD-if-CYw"/>
+                    <connections>
+                        <outlet property="phoneTextField" destination="GbZ-dT-Y5c" id="9iH-LU-oeh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Wl-Cp-uEI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0qc-aG-Jds" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jIA-mk-x6u">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yPv-CK-Npe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcX-Mw-sL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="791.15442278860576"/>
+        </scene>
+    </scenes>
+</document>

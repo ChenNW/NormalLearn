@@ -1,0 +1,15 @@
+//
+//  cnw.pch
+//  AspectsDemo
+//
+//  Created by Cnw on 2018/9/25.
+//  Copyright © 2018 Cnw. All rights reserved.
+//
+
+#ifndef cnw_pch
+#define cnw_pch
+
+#import <Aspects.h>
+
+
+#endif /* cnw_pch */

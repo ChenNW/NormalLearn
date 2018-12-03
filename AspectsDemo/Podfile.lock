@@ -1,0 +1,20 @@
+PODS:
+  - Aspects (1.4.1)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - Aspects
+  - YYText (~> 1.0.7)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Aspects
+    - YYText
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: 85ba05ee1c99e386a7a85f8193b9d0e0b83c4abe
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hPL-nd-fcT"/>
+                        <viewControllerLayoutGuide type="bottom" id="HX8-RT-LtM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TF8-8L-S5f">
+                                <rect key="frame" x="10" y="220" width="106.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xz1-84-3P1"/>
+                                </constraints>
+                                <state key="normal" title="加入数据"/>
+                                <connections>
+                                    <action selector="insertData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uFl-3W-c7G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjU-f7-xre">
+                                <rect key="frame" x="126.5" y="220" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Kz-zE-26j"/>
+                                </constraints>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="detateData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDD-2s-72a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-t9-LUa">
+                                <rect key="frame" x="242.5" y="220" width="106.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5F8-ra-Ke7"/>
+                                </constraints>
+                                <state key="normal" title="查询数据"/>
+                                <connections>
+                                    <action selector="queryData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lz9-t4-VHS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gF1-t9-LUa" firstAttribute="top" secondItem="TF8-8L-S5f" secondAttribute="top" id="9YB-uk-7as"/>
+                            <constraint firstItem="pjU-f7-xre" firstAttribute="top" secondItem="TF8-8L-S5f" secondAttribute="top" id="Cc8-9f-1iu"/>
+                            <constraint firstItem="TF8-8L-S5f" firstAttribute="top" secondItem="hPL-nd-fcT" secondAttribute="bottom" constant="200" id="Gtb-rc-fCI"/>
+                            <constraint firstItem="pjU-f7-xre" firstAttribute="leading" secondItem="TF8-8L-S5f" secondAttribute="trailing" constant="10" id="ICu-jM-J77"/>
+                            <constraint firstItem="gF1-t9-LUa" firstAttribute="leading" secondItem="pjU-f7-xre" secondAttribute="trailing" constant="10" id="LcC-em-LKm"/>
+                            <constraint firstItem="gF1-t9-LUa" firstAttribute="leading" secondItem="pjU-f7-xre" secondAttribute="trailing" constant="10" id="Mfe-SH-G1V"/>
+                            <constraint firstItem="gF1-t9-LUa" firstAttribute="width" secondItem="TF8-8L-S5f" secondAttribute="width" id="cmu-oO-2ml"/>
+                            <constraint firstItem="TF8-8L-S5f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="egH-TU-f0K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gF1-t9-LUa" secondAttribute="trailing" constant="10" id="nUT-aw-3C4"/>
+                            <constraint firstItem="pjU-f7-xre" firstAttribute="width" secondItem="TF8-8L-S5f" secondAttribute="width" id="shY-jh-wdh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
