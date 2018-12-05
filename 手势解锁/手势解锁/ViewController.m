@@ -16,8 +16,10 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     self.title = @"首页";
+    
 }
 
 
